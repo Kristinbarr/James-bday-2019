@@ -1,1 +1,1 @@
-Sass Command `sass --watch sass:css`
+Sass Command `sass --watch scss:css`
