@@ -190,9 +190,11 @@ section .content {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
 }
 .inner-content img {
-  margin: 5%;
+  margin: 3%;
 }
 
 .jump-down i {

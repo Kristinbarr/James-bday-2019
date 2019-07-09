@@ -117,8 +117,10 @@ section {
 .inner-content {
   @include flex(center, center);
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
   img {
-    margin: 5%;
+    margin: 3%;
   }
 }
 
