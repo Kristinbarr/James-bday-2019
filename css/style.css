@@ -66,8 +66,14 @@ body {
   background-image: linear-gradient(to bottom right, paleturquoise, coral);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Quicksand", sans-serif;
+  margin: 1rem;
 }
 
 h1 {
@@ -155,7 +161,7 @@ section {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   text-align: center;
   color: midnightblue;
 }
@@ -164,7 +170,7 @@ section .content {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  height: 90vh;
+  height: 100vh;
 }
 
 .heritage-content {
@@ -191,12 +197,45 @@ section .content {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 94vw;
 }
 .inner-content img {
+  object-fit: contain;
   margin: 3%;
 }
 
+@media (max-width: 375px) {
+  h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+
+  img {
+    width: auto;
+  }
+
+  section .content {
+    height: 80vh;
+  }
+
+  .heritage-content div h5 {
+    margin-bottom: 0rem;
+  }
+  .inner-content {
+    max-height: 80vh;
+  }
+  .inner-content img {
+    object-fit: contain;
+    margin: 1%;
+    height: auto;
+    width: auto;
+  }
+
+  .jump-down i {
+    margin-bottom: 2rem;
+  }
+}
 .jump-down i {
   height: 10vh;
   font-size: 5rem;
